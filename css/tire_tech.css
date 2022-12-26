@@ -1,0 +1,92 @@
+*{ margin: 0; padding: 0; }
+li {list-style: none;}
+a {text-decoration: none;
+    color: #111;
+    display: block;}
+/* 모든 img태그의 크기는 부모크기를 따라감 */
+img {width: 100%;}
+
+.wrap {width: 100%;}
+header, section, footer {width: 100%; float: left;}   /*float:left의 2가지 기능*/
+header, section, footer, div {box-sizing: border-box;}
+header {height: 60px;
+        border-bottom: 1px solid #eee;
+        box-shadow:0 1px 8px #ccc;   /*0:좌우 그림자없음, 1px:아래쪽 그림자 거리, 8px:그림자크기 */
+        position: relative;
+        z-index: 5;
+        }
+ .center_box {background-color: #eee;
+            width: 1280px;
+            margin: 0 auto;}
+header .logo {float: left; margin-top: 12px;}
+header nav {float: right;
+            margin-top: 25px;
+            z-index: 10;
+            position: relative;
+           }
+header nav > ul > li {float: left; 
+                        }
+header nav > ul > li > a {padding: 5px 50px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        }
+header nav > ul > li > a:hover {color: #c539b4;}
+header nav ul li ul {padding-top: 20px;
+                        display: none;}
+header nav ul li ul li a {padding: 7px 0;
+                         text-align: center;
+                         font-size: 14px;} 
+header nav ul li ul li a:hover {color: #c539b4;}
+header nav:hover ul.sub {display: block;}
+
+section.main {margin-top: 10px;}
+
+/* 마우스 오버한 주메뉴에 해당하는 서브메뉴만 보임 */
+/* header nav > ul > li:hover ul {display: block;} */
+
+/* section.banner */
+.banner {margin-top: 20px;}
+.banner .center_box div {float: left;}
+.banner .ban1 {width: 50%;
+       margin-right: 20px;}
+.banner .ban2 {width: 23%;
+      margin-right: 20px;}
+.banner .ban3 {width: 23%;}
+.banner .ban4 {margin-top: 30px; width: 100%;}
+
+/* footer */
+footer { background-color: #333;
+        margin-top: 60px;}
+
+footer .left_box {float: left;}
+footer .right_box {float: right;}
+footer .left_box .f_logo {float: left;
+                          margin-top: 12px;}
+footer .left_box address {float: left;
+                          margin-left: 20px;
+                          font-size: 13px;
+                         font-style: normal;
+                         color: #999;
+                         margin-top: 12px;
+                         line-height: 20px;
+                         margin-bottom: 10px;}
+footer .right_box .user {float: left;
+                         margin-top: 20px;}
+footer .right_box .user ul li {float: left;}
+footer .right_box .user ul li a {color: #999;
+                                 font-size: 14px;
+                                 padding: 0 10px;
+                                 line-height: 22px;
+                                 float: left;}
+/* .user의 리스트 사이에 파이프기호(|) 넣기 */
+footer .right_box .user ul li:after {content: "|";
+                                     float: right;
+                                     color: #aaa;}
+
+/* .user의 마지막 li의 파이프기호(|)는 없앰 */
+footer .right_box .user ul li:last-child:after {content: "";}
+
+
+footer .right_box .family {float: left;
+                            margin-top: 20px;
+                            margin-left: 10px;} 

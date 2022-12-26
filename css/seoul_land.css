@@ -1,0 +1,417 @@
+*{margin: 0; padding: 0;}
+li {list-style: none; }
+a {text-decoration: none; color: #111; display: block; white-space: nowrap; }
+img {width: 100%;}
+html, body {overflow-x: hidden;}
+header, section, footer {width: 100%; float: left;}
+header, section, footer, div {box-sizing: border-box;}
+
+
+@font-face{
+    font-family: watermelon;  /*폰트 이름설정하기*/
+    src: url(../font/EF_watermelonSalad.eot), url(../font/EF_watermelonSalad.ttf), url(../font/EF_watermelonSalad.woff);}
+
+    @font-face {
+        font-family: 'GyeonggiTitleM';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+ header a {font-family: watermelon;}       
+section.main h1 {font-family: 'GyeonggiTitleM';}
+section.app div.app_banner  {font-family: 'watermelon';}
+.talk .center_box .search1 h1,
+.map .center_box .search1 h1 {font-family: 'GyeonggiTitleM';}
+.talk .center_box .search1 span,
+.map .center_box .search1 span {font-family: 'watermelon';}
+.talk .center_box .search1 input,
+.map .center_box .search1 input {font-family: 'watermelon';}
+.custom .center_box h1 {font-family: 'GyeonggiTitleM';}
+.custom .center_box p {font-family: 'watermelon';}
+footer .center_box .f_left address {font-family: 'GyeonggiTitleM';}
+.story .story_box h1 {font-family: 'GyeonggiTitleM';}
+.story .story_box p {font-family: 'watermelon';}
+section.card  .card_list h3 {font-family: 'GyeonggiTitleM';}
+.card .card_list p {font-family: 'watermelon';}
+.f_slide .swiper-slide h3 {font-family: 'watermelon';}
+section.main div.center_box div.left_box p {font-family: 'watermelon';}
+.popup a {font-family: 'GyeonggiTitleM';}
+
+
+.wrap {width: 100%;}
+header {height: 140px; position: relative; z-index: 100; }
+nav {z-index: 10; position: relative;}
+.center_box {width: 1280px; margin: 0 auto;}
+
+header div.top_box, div.bottom_box {float: left; width: 100%;}
+
+header div.logo {float: left; width: 177px; margin: 10px; margin-top: 20px; margin-left: 20px;}
+header div.menu {float: right;}
+
+header div.top_box  {float: left; margin-top: 20px;}
+header div.top_box ul {float: right; margin-right: 20px;}
+header div.top_box ul li { float:left; margin-left: 5px;}
+header div.top_box ul li a {font-size: 15px;}
+header div.top_box ul li:after {content: "|"; float: right; color: black; margin-left: 5px;
+                                margin-top: -4px;}
+header div.top_box ul li:last-child::after {content: "";}
+header div.top_box ul li a {float: left;}
+
+
+
+header div.bottom_box nav { position: absolute; width: 1000px;
+                        left: 50%; transform: translateX(-50%); margin-top: 50px;}
+
+header div.bottom_box nav > ul > li {float: left; margin-right: 35px; position: relative;}
+header div.bottom_box nav > ul > li > a {font-size: 16pt; padding: 0 17px; font-weight: bold;
+                                        padding-bottom: 10px;}
+header div.bottom_box nav > ul > li > ul {
+    background-color: #4b9679; border: 9px solid #4b9679;
+    border-radius: 20px;  position: absolute; left: 50%; transform: translateX(-50%);
+    display: none;   }
+header div.bottom_box nav > ul > li > ul > li > a {font-size: 12pt; margin: 5px; text-align: center;
+                                            padding: 5px 0; color: #fff;}
+                                            
+                                            /* ---- */
+                                            
+/* 마우스오버 */
+header div.bottom_box nav > ul > li > a:hover {color: #4b9679;}
+header div.bottom_box nav > ul > li:hover ul {display: block; }
+header div.bottom_box nav > ul > li > ul > li:hover {text-decoration: underline;}
+
+
+                                            /* ---- */
+
+header div.bottom_box div.kr div.kr2 .lang_sub ul {background-color: #111; border: 10px solid #111;
+                                                border-radius: 15px;  margin-top: 10px; }
+header div.bottom_box div.kr div.kr2  ul  li  a {color: #fff; font-size: 15px;}
+header div.bottom_box div.kr div.kr2 .lang_sub { display: none;}
+
+header div.bottom_box div.kr {float: right; margin-top: 50px; margin-right: 20px; }
+header div.bottom_box div.kr div.kr2 img {width: 16px; margin-bottom: 3px; margin-left: 10px;}
+header div.bottom_box div.kr div.kr2   {float: left; margin-right: 10px;}
+header div.bottom_box div.kr div.kr2 > li {float: left; }
+header div.bottom_box div.kr div.kr2 .lang_sub li {margin-bottom: 5px; margin-left: 3px;}
+header div.bottom_box div.kr div.kr2 .lang_sub ul .active {font-weight: bold;}
+
+header div.bottom_box div.kr > ul > li > a {font-size: 12pt; font-weight: bold; padding-right: 10px;}
+
+header div.bottom_box div.kr > div.ham > a {margin-right: 70px; width: 30px; margin-top: -5px;}
+
+/* --------------------------------------------------------- */
+
+section.main .center_box {margin: 0 auto; width: 1280px; height: 240px; padding: 30px;
+                border: 1px solid #4b9679; margin-top: 15px;}
+
+section.main div.center_box div.right_box img {width: 523px; margin-right: 30px; }
+section.main div.center_box div.right_box {float: right; margin-bottom: 40px;}
+
+section.main div.center_box div.left_box {float: left;
+                                            width: 50%; text-align: left; }
+section.main div.center_box div.left_box > h1 {font-size: 36pt; color: #4b9679; line-height: 50px; letter-spacing: 1px;
+                                                margin-left: 50px; margin-top: 30px;}
+
+/* section.main div.center_box div.left_box div.icon {position: absolute;} */
+section.main div.center_box div.left_box div.icon2 {position: relative; float: right; width: 40px; }
+section.main div.center_box div.left_box div.icon2 img {position: absolute; top:0; left:0;}
+section.main div.center_box div.left_box div.icon2 img.noplus {display: none;}
+section.main div.center_box div.left_box div.icon2:hover .noplus {display: block;}
+
+section.main div.center_box div.left_box p {float: left; margin-top: 10px; font-size: 17px; }
+section.main div.center_box div.left_box div.icon {float: right; width: 135px;  margin-top:0px; }
+
+
+/* ------------------------------------------------------------------------------- */
+
+section .slide {margin-top: 40px; height: 400px;  width: 100%; float: left; text-align: center;}
+
+/* swiper slide button - 슬라이드 오른쪽 버튼*/
+section .slide .swiper-button-next { right: 590px; background-image: url(../img/right_arrow.png);
+                        width: 60px; height: 60px; background-size: cover;}
+section .slide .swiper-button-next:after {content: "";}
+
+/* 슬라이드 왼쪽 버튼 */
+section .slide .swiper-button-prev {left: 590px; background-image: url(../img/left_arrow.png);
+                        width: 60px; height: 60px; background-size: cover;}
+section .slide .swiper-button-prev:after {content: "";}
+
+section .slide .swiper {overflow: visible; /*hidden의 반대*/}
+
+/* swiper slide pagination - 슬라이드 동그란 버튼 */
+section .slide .swiper-pagination {bottom: -40px;}
+section .slide .swiper-pagination-bullet {width: 14px; height: 14px;}
+section .slide .swiper-pagination-bullet-active {background-color: #4b9679;}
+/* -------------------------------------------------------------------------- */
+
+section.card {margin-top: 200px;}
+section.card .center_box{width: 1400px;}
+section.card  h1 {text-align: center; margin-bottom: 80px; font-family: 'GyeonggiTitleM'; font-size: 40pt;}
+section.card .card_list {width: 1400px; height: 400px; position: relative;}
+section.card .swiper {width: 1280px;}
+section.card .swiper .swiper-slide { border-radius: 20px;
+                        box-sizing: border-box; padding:0px; height: 350px; transition: all 0.4s; height: 340px;
+                         }
+section.card .swiper .swiper-slide .over {width: 100%; height: 100%; box-sizing: border-box; padding: 20px 0; text-align: center;
+                                            background: #fff; border-radius: 12px;}
+section.card .swiper .swiper-slide:hover {border: none; padding: 10px; background: linear-gradient(45deg, #50e2c4, #895eee);}
+section.card .swiper .swiper-slide img {width: 150px; height: 150px; margin-left: 15px; }
+section.card .swiper .swiper-slide h3 {margin-top: 30px; margin-bottom: 20px; font-size: 22px;}
+section.card .swiper .swiper-slide p {font-size: 17px;}
+section.card .swiper .s4 h3 {margin-bottom: 0;}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* swiper slide pagination - 슬라이드 동그란 버튼 */
+.f_slide .swiper-pagination-bullet {width: 14px; height: 14px; background-color: #fff; opacity: 1;}
+.f_slide .swiper-pagination-bullet-active {background-color: #4b9679;}
+
+/* ------------------------------------------------------------------------------- */
+
+.app {margin-top: 200px;}
+.app .app_banner {width: 100%; height: 200px; background-color: #a9eed3;
+                                             background-image: url(../img/app.png);
+                                            background-position: 760px 40px;
+                                            background-repeat: no-repeat;
+                                            background-size: 14%;
+                                            border-radius: 30px;
+                                            padding: 50px;}
+
+.app .app_banner .app_txt {float: left;}
+.app .app_banner .app_txt h1 {margin-left: 80px; margin-top: 10px; font-size: 28pt; line-height: 40px;
+                                font-weight: normal; }
+.app .app_banner .app_down {float: right; background-color: #4b9679;
+                            border-radius: 60px; width: 170px; height: 60px; padding: 18px 30px;}
+
+.app .app_banner .app_down a {color: #fff; }
+.app .app_banner .app_down {margin: 30px;}
+.app .app_banner .app_down p {float: left; font-size: 18px; margin-left: 8px; margin-top: 3px; }
+.app .app_banner .app_down span {float: right; display: block; width: 18px;}
+
+/* ---------------------------------------------------------------------------------------- */
+
+.talk .center_box {width: 1280px; height: 380px; margin-top: 200px; border: 1px solid rgb(211, 211, 211);
+                                                    border-radius: 100px; }
+.map .center_box {width: 1280px; height: 380px; margin-top: 180px;}
+
+.talk  .center_box .search1,
+.map .center_box .search1 {float: left; margin-left: 100px; margin-top: 80px; }
+.talk .center_box .search1 h1,
+.map .center_box .search1 h1 { font-size: 30pt;}
+.talk .center_box .search1 span,
+.map .center_box .search1 span {font-size: 17pt;}
+
+.talk .center_box .search_box,
+.map .center_box .search_box {width: 400px;  border-bottom: 6px solid #111;
+                                    margin-top: 90px; margin-left: -10px; }
+.talk .center_box .search_box input, 
+.map .center_box .search_box input {width: 360px; margin-top: 10px; padding-bottom: 5px
+                                                ; border: none; font-size: 16pt;
+                                        background-color: transparent;}
+.talk .center_box .search_box button,
+.map .center_box .search_box button {width: 40px; float: right; background-color: transparent;
+                                        border: none;  }
+ 
+
+/* input 영역을 클릭했을 때 나오는 테두리 없앰 */
+.talk .center_box .search_box input:focus, 
+.map .center_box .search_box input:focus{ outline: none;}
+
+
+.map .center_box .talk_box { right: 370px; top: 3180px;}
+.talk .center_box .search_talk {float: right; position: relative; width: 40%; height: 380px;}
+.talk .center_box .search_talk div,
+.map .center_box .talk_box {position: absolute;}
+.talk .center_box .search_talk  .talk1 {width: 161px; top: 50px; left: -130px;}
+.talk .center_box .search_talk  .talk2 {width: 162px; top: 150px; left: 60px;}
+.talk .center_box .search_talk  .talk3 {width: 208px; top: 30px; left: 250px;}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* 고객센터,공연일정 */
+
+.custom .center_box {margin-top: 200px;}
+.custom .center_box > div { width:630px; height:260px; border-radius: 30px; float: left;
+                            padding:40px 50px; cursor: pointer; overflow:hidden;}  
+.custom .center_box > .startup {background-color:#a9eed3;}
+.custom .center_box > .customer {background-color: #bdb9ea;}
+
+/* 글자영역과 이미지 영역 가로로 정렬 */
+.custom .center_box div div { float:left; position: relative; height:100%;}
+/* 창업안내 오른쪽 여백 주기 */
+.custom .center_box .startup { margin-right: 20px;}
+
+/* 마우스오버했을 때 그라데이션 배경 나타남 */
+.custom .center_box .startup:hover {
+    background: linear-gradient(to top left,#bdb9ea ,#a9eed3 );
+}
+.custom .center_box .customer:hover {
+    background: linear-gradient(to top left, #a9eed3,#bdb9ea );
+}
+
+/* .custom div안의 글자 스타일 지정 */
+.custom .center_box div h1 { font-size:28px; line-height:34px; }
+.custom .center_box div p { font-size:22px; line-height:28px; margin-top: 10px;}
+.custom .center_box .custom_img { width:140px; margin-left:80px; margin-top:0px; }
+.custom .center_box .startup .custom_img { margin-left:40px; }
+.custom .center_box div:hover h1,
+.custom .center_box div:hover p { color:white; }
+
+/* .custom 안의 화살표 애니메이션 */
+.custom .center_box div div .arrow {
+    /* .startup과 .customer가 부모임. 부모객체를 기준으로 왼쪽위치:0, 아래쪽위치:0 */
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    /* 화살표 가로길이와 세로길이 */
+    width:26px;
+    height:15px;
+    /* 0.5초 동안 화살표의 가로길이가 늘어나는 애니메이션 */
+    transition:all 0.5s;
+}
+
+/* 화살표 꼬리 */
+.custom .center_box div div .arrow:before {
+    content:"";
+    position: absolute;
+    left:0;
+    top:50%;
+    width:100%;
+    border-bottom:3px solid #111;
+    transform:translateY(-50%);
+}
+/* 화살표 머리(>) */
+.custom .center_box div div .arrow:after {
+    content:"";
+    position: absolute;
+    right:0;
+    top:50%;
+    width:10px;
+    height:10px;
+    border-right:3px solid #111;
+    border-top:3px solid #111;
+    transform:translateY(-50%) rotate(45deg);
+    display: block;
+}
+.custom .center_box div div .arrow i {
+    overflow:hidden;
+    display: inline-block;
+    border:0;
+    width:1px;
+    height:1px;
+    clip:rect(1px, 1px, 1px, 1px);
+    clip-path:inset(50%);
+}
+.custom .center_box > div:hover .arrow {
+    width:120px;
+}
+.custom .center_box > div:hover .arrow:before,
+.custom .center_box > div:hover .arrow:after {
+    border-color:white;
+}
+
+/* ------------------------------------------------- */
+
+.story { margin-top:100px; }
+.story .center_box .story_box {
+    width:1000px;
+    height:1000px; 
+    /* .story_box의 자식객체 div(4개)가 부모객체 기준으로 배치 */
+    position: relative;
+    margin: 0 auto;
+}
+.story .center_box .story_box h1 {
+    font-size:40px;
+    margin-bottom: 40px;
+}
+.story .center_box .story_box p {
+    font-size:22px;
+    line-height:36px;
+}
+.story .center_box .story_box div {
+    width:480px;
+    height:530px;
+    /* 자식객체 .story_img_over가 부모객체 기준으로 배치, 자기자신 div를 겹쳐서 배치 */
+    position: absolute;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.story .center_box .story_box .story_txt1 {
+    top:50px; left:0; 
+    width:430px; height:400px;
+    padding-top:50px;
+    border-radius: 0;
+}
+.story .center_box .story_box .story_img1 {
+    top:0; right:0;
+}
+.story .center_box .story_box .story_img2 {
+    bottom:0; left:0;
+}
+.story .center_box .story_box .story_txt2 {
+    bottom:50px; right:0;
+    width:430px; height:400px;
+    padding-top:50px;
+    border-radius: 0;
+}
+.story .center_box .story_box div .story_img_over {
+    transition:all 0.5s;
+}
+.story .center_box .story_box div:hover .story_img_over {
+    transform:scale(1.1, 1.1);
+}
+
+/* --------------------------------------------- */
+
+/* 하단 슬라이드 영역 */
+.f_slide {width: 100%; height: 960px; margin-top: 200px;}
+.f_slide .swiper-slide {background-position: center; background-size: cover;
+                    background-repeat: no-repeat; height: 960px;}
+.f_slide .fs1 {background-image: url(../img/fs3.png);}
+.f_slide .fs2 {background-image: url(../img/fs2.png);}
+.f_slide .fs3 {background-image: url(../img/fs1.png);}
+.f_slide .swiper-slide h3 {background-color: rgba(0, 0, 0, 0.5);
+                        width: 480px; height: 200px; color: #fff; font-size: 60px;
+                        line-height: 80px; padding: 40px; margin-top: 320px; margin-left: 100px;}
+
+
+
+
+
+
+
+
+/* footer */
+footer {width: 100%; padding: 60px 0; background-color: #f0f0f0;}
+footer .center_box .f_left {float: left;}
+footer .center_box .f_right {float: right; margin-top: 0px;}
+footer .center_box .f_logo {width: 110px; margin-bottom: 30px;}
+footer .center_box address {font-style: normal; color: #666; font-size: 13pt; line-height: 22px; 
+                             width: 600px;}
+
+footer .center_box .f_left .sns { margin-top: 30px;}
+footer .center_box .f_left .sns ul li {width: 30px; float: left; margin-right: 15px;}
+
+footer .center_box .f_right div {float: left; margin-left: 50px;}
+footer .center_box .f_right div ul {float: left; padding-right: 60px;}
+footer .center_box .f_right div h3 {color: #4b9679; font-size: 14pt; margin-bottom: 25px;}
+footer .center_box .f_right div ul li a { padding: 7px 0; font-size: 10pt; color: #666;}
+
+footer .center_box .f_right div ul li:hover a {text-decoration: underline; color: #111;}
+
+/* 햄버거 메뉴를 클릭하면 나타나는 팝업 메뉴 */
+.popup {position: absolute; z-index: 1000; width: 100%; height: 100%; border-top: 6px solid #4b9679;
+        background-color: #fff; box-sizing: border-box; padding: 200px; display: none; }
+.popup .close_btn {width: 45px; float: left;}
+.popup > ul {padding: 20px 200px;}
+.popup > ul > li {display: inline-table; margin: 30px 70px; width: 200px; }
+.popup > ul > li > a {font-size: 35px; font-weight: bold; margin-bottom: 20px; color: #4b9679;}
+.popup ul li ul li a {padding: 5px; font-size: 20px; font-weight: bold;}
+
+/* top버튼 */
+.top {position: fixed; bottom: 80px; right: 20px; border-radius: 100px; 
+        background-color: #fff;  width: 60px; height: 60px;
+        cursor: pointer; z-index: 600; box-shadow: 4px 5px 5px rgb(134, 134, 134);}
+.top img {width: 55px; margin-left: 3px;}

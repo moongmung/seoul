@@ -1,0 +1,103 @@
+*{margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;
+    color: #111; display: block;}
+img {width: 100%;}
+header, section, footer {width: 100%; float: left; box-sizing: border-box;}
+/* -------------------------------미리 하기 -------------------------*/
+
+
+.wrap {width: 100%;}
+header {height: 95px;
+        background-color: #000;}
+header .logo {float: left;
+                width: 160px;
+                margin-top: 20px;
+                padding-right: 15px;
+              }
+header .left_box nav {float: left;}
+header .right_box nav {float: right;}
+
+header .center_box {width: 1200px;
+                    margin: 0 auto;}
+header .center_box .left_box {float: left;}
+header .center_box .left_box nav ul li {float: left;
+                      margin: 15px;
+                      margin-top: 40px;
+                      font-size: 14px;}
+header .center_box .left_box nav ul li a {color: #ffff;}
+
+header .center_box .right_box {float: right;
+                              }
+header .center_box .right_box .top_menu { float:left; margin-top: 40px;}
+header .center_box .right_box .top_icon { float:left; margin-top: 29px;}
+
+header .center_box .right_box .top_icon ul li {width: 30px; float: left;}
+ header .center_box .right_box .top_icon ul li:first-child {width: 40px;}
+ header .center_box .right_box .top_icon ul li:last-child {margin-top: 5px;}
+header .center_box .right_box .top_menu ul li {float: left;
+                                        font-size: 14px;
+                                        padding: 0px 20px;}
+header .center_box .right_box .top_menu ul li a {color: #fff;}
+
+/* -------------------------------------------------------------------- */
+section .center_box {width: 1200px; margin: 0 auto;}
+.banner .ban1{width: 50%;}
+.banner .ban2{width: 50%;}
+.banner div div{float: left;}
+.banner {margin: 20px 0 20px 0;}
+
+
+.banner2 p {font-size: 25px;
+            font-weight: bold;}
+
+.banner2 .ban3 {
+                
+                margin-top: 30px;}
+.banner2 .center_box .ban3 ul li {float: left; width: 31%;
+            margin-right: 20px;
+            margin-bottom: 20px;} 
+.banner2 .center_box .ban3 ul li img {background-color: rgba(230, 230, 230, 0.959);
+                                      }
+.banner2 .center_box .ban3 ul li span {color: gray; font-size: 14px;}
+
+.banner2 .center_box .ban4 img {margin-top: 30px; margin-bottom: 150px;}
+
+/* -------------------------------------------------------------------------- */
+
+footer.foot1 {border-top: 1px solid rgb(175, 175, 175);
+              border-bottom: 1px solid rgb(211, 211, 211);
+             }
+footer .center_box {width: 1200px; margin: 0 auto; margin-top: 20px;}
+
+
+footer.foot1 div.sns {float: right;}
+footer.foot1 div.sns a {float: left; margin-right: 10px;}
+footer.foot1 div.sns img {width: 30px; }
+footer.foot1 div.user li {float: left; margin-right: 10px; margin-bottom: 20px;}
+footer.foot1 div.user li:last-child { font-weight: bold;}
+
+/* --------------------------------------------------------------------------- */
+footer.foot2 div.f_logo {width: 80px; margin-bottom: 10px;}
+
+footer.foot2 address {font-style: normal; font-size: 13px;}
+footer.foot2 div.left_box {float: left;}
+
+
+footer.foot2 div.right_box {float: right;}
+footer.foot2 div.right_box li {text-align: right;}
+footer.foot2 div.right_box li:first-child {font-size: 13px; font-weight: bold;}
+footer.foot2 div.right_box li:nth-child(2) {font-size: 18px; font-weight: bold;}
+footer.foot2 div.right_box li:nth-child(3) {font-size: 11px; color: gray;}
+footer.foot2 div.right_box li:nth-child(4) {font-size: 11px; color: gray;}
+footer.foot2 div.right_box li:nth-child(5) {font-size: 11px; color: gray;}
+footer.foot2 div.right_box li:nth-child(7) {font-size: 13px; }
+footer.foot2 div.right_box li:nth-child(8) {font-size: 13px; }
+
+footer.foot2 div.right_box a {border: 1px solid black;
+                                 border-radius: 5px;
+                                 margin: 5px;
+                                 padding: 5px;
+                                 font-size: 13px;
+                                 float: right;
+                                 } 
